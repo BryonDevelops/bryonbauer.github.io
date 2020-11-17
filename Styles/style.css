@@ -1,0 +1,261 @@
+@import 'variable';
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #303030;
+}
+
+#title{
+    text-align: center;
+    font-family: 'Luckiest Guy';
+    margin: -4% auto;
+    font-size: 4.5em;
+}
+
+.topSlider {
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+}
+
+.topSlider span {
+    position: absolute;
+    color: white;
+    text-shadow: 10px 10px black;
+    opacity: 0.5;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.topSlider .container {
+    position: absolute;
+}
+
+.topSlider .slide {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: slide 10s infinite;
+    animation: slide 10s infinite;
+    overflow: hidden;
+}
+
+.topSlider .slide:nth-child(2) {
+    left: 0%;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    background-image: url(/PortfolioPics/DSC_2816.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.topSlider .slide:nth-child(3) {
+    left: 100%;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+    background-image: url(/PortfolioPics/DSC_3036.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.topSlider .slide:nth-child(4) {
+    left: 100%;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    background-image: url(/PortfolioPics/DSC_2835.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.topSlider .slide:nth-child(5) {
+    left: 100%;
+    -webkit-animation-delay: 7.5s;
+    animation-delay: 7.5s;
+    background-image: url(/PortfolioPics/DSC_2827.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.topSlider p {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 10em;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 40%;
+    color: #fff;
+}
+
+@-webkit-keyframes slide {
+    0% {
+        left: 100%;
+        width: 100%;
+    }
+
+    5% {
+        left: 0%;
+    }
+
+    25% {
+        left: 0%;
+    }
+
+    30% {
+        left: -100%;
+        width: 100%;
+    }
+
+    31% {
+        left: -100%;
+        width: 0%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+}
+
+@keyframes slide {
+    0% {
+        left: 100%;
+        width: 100%;
+    }
+
+    5% {
+        left: 0%;
+    }
+
+    25% {
+        left: 0%;
+    }
+
+    30% {
+        left: -100%;
+        width: 100%;
+    }
+
+    31% {
+        left: -100%;
+        width: 0%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: scroll;
+    position: relative;
+}
+
+.element {
+    height: 1000px;
+    width: auto;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    display: flex;
+    overflow-y: hidden;
+}
+
+.element:nth-child(1) {
+    background: #1d1e21;
+}
+
+.element:nth-child(2) {
+    background: #ee6620;
+}
+
+.element:nth-child(3) {
+    background: #777ba0;
+}
+
+.element:nth-child(4) {
+    background: #da1e62;
+}
+
+.element:nth-child(5) {
+    background: #1d30dd;
+}
+
+.y-mandatory {
+    scroll-snap-type: y mandatory;
+}
+
+.sectionTitle{
+    text-align: center;
+    font-family: 'Luckiest Guy';
+    margin: 2% auto;
+    font-size: 2em;
+    color: white;
+}
+
+.hr{
+    margin-top: -18%;
+    width: 120%;
+    margin-left: -10%;
+    height: 1%;
+    background-color: white;
+}
+
+.main-footer {
+    text-align: center;
+}
+
+.main-footer p {
+    margin: 0px;
+    padding: 0px;
+    top: 10px;
+    color: white;
+    bottom: 0px;
+}
+
+#taskLog{
+    border: 2px green solid;
+}
+
+#scrambler{
+    border: 2px orange solid;
+}
+
+.projectContainer{
+    border: 2px red solid;
+    height: 90%;
+    width: 90%;
+    color: white;
+    display: inline-flex;
+    margin-top: 15%;
+}
+
+.project{
+    padding: 1%;
+    width: 50%;
+    height: 33%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 0.75em;
+}
+
+.techStack{
+
+}
+
+.techImg{
+    width: 10%;
+    height: 10%;
+}
