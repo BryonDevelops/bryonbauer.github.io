@@ -1,0 +1,286 @@
+@import 'variable';
+
+@font-face{
+    font-family: myFont;
+    src: 'url(/fonts/Montserrat-Bold.ttf);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 1000vh;
+    background-color: #f5f5f5;
+}
+
+#header{
+    width: 100%;
+    background-color: transparent;
+    padding: 3%;
+    position: absolute;
+}
+
+#headerContainer{
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#heroTitle{
+    color: black;
+    white-space: nowrap;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6em;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    /* transition: 0.3s;
+    text-shadow: 1px 1px 0 white, 1px 2px 0 white, 1px 3px 0 white, 1px 4px 0 white,
+    1px 5px 0 white, 1px 6px 0 white, 1px 7px 0 white, 1px 8px 0 white,
+    5px 13px 15px black; */
+}
+
+#heroSubTitle{
+    color: grey;
+    white-space: nowrap;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+}
+
+#maleIcon{
+    width: 30%;
+    height: 45%;
+    position: absolute;
+    bottom: -5%;
+    left: 35%;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+
+#logo{
+    width: 5%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+}
+
+#navLinkContainer{
+    display: inline-flex;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    justify-content: space-evenly;
+}
+
+#parallax1{
+    /* The image used */
+    /* background-image: url("/Images/PortfolioPics/DSC_2827.jpg"); */
+    /* Set a specific height */
+    height: 9.6%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#parallax2{
+    top: 5%;
+    /* The image used */
+    background-image: url("/Images/mntn3.jpg");
+
+    /* Set a specific height */
+    height: 10%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#aboutMeSection{
+    height: 10%;
+    background-color: #D25757;
+    padding: 1%;
+    clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(65% - 5vw)
+  );
+  /* change the calc height to a percentage height to get alternate responsive behavior*/
+}
+
+#aboutMe{
+    width: 35%;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+#intro{
+    position: relative;
+    margin-top: 20%;
+    font-weight: bold;
+}
+
+#blurb{
+    font-size: large;
+    text-align: center;
+    word-break: break-word;
+}
+
+#skillsBox{
+    margin-top: -40%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 8%;
+    background-color: white;
+    position: relative;
+    translate: translate(-50%);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.NavLink{
+    color: gray;
+    text-decoration: none;
+    font-size: large;
+    padding: 5%;
+}
+
+.PrimaryBtn{
+    border: 1px solid #D25757;
+    font-size: 1.2em;
+    color:#D25757; 
+    padding: 3%;
+    display: inline-block;
+    border-radius: 290486px;
+}
+
+/* .HeroCutOutText:hover{
+    transition: 0.3s;
+    transform: scale(1.1)translate(-50%, -50%);
+    text-shadow: 1px -1px 0 white, 1px -2px 0 white, 1px -3px 0 white,
+    1px -4px 0 white, 1px -5px 0 white, 1px -6px 0 white, 1px -7px 0 white,
+    1px -8px 0 white, 5px -13px 15px black, 5px -13px 25px #808080;
+} */
+
+.Container{
+    display: block;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    width: 70%;
+    /*border: 1px red solid;*/
+}
+
+.Pane{
+    float: left;
+    height: 100%;
+    border-right: 1px solid #E6ECF8;
+    text-align: center;
+}
+
+.Pane:last-of-type{
+    border-right: 1px solid transparent;
+}
+
+.PaneTitle{
+    font-weight: bold;
+}
+
+.PaneImg{
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 25%;
+    margin-top: 10%;
+}
+
+.LanguagesContainer{
+    margin: auto;
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 70%;
+}
+
+.LanguagesContainer ul{
+    margin: auto;
+    display: block;
+    padding-inline-start: 0px;
+    font-size: 1em;
+}
+
+.LanguagesContainer ul li{
+    position: relative;
+    color: black;
+    list-style: none;
+}
+
+.LanguagesTitle{
+    font-size: 1.2em;
+    color: #D25757;
+}
+
+.FrameworksContainer{
+    margin: auto;
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 70%;
+}
+
+.FrameworksContainer ul{
+    margin: auto;
+    display: block;
+    padding-inline-start: 0px;
+    font-size: 1em;
+}
+
+.FrameworksContainer ul li{
+    position: relative;
+    color: black;
+    list-style: none;
+}
+
+.FrameworksTitle{
+    font-size: 1.2em;
+    font-family: myFont;
+    color: #D25757;
+}
+
+.PanesHr{
+    position: relative;
+    width: 65%;
+}
+
+.HeroHr{
+    position: relative;
+    width: 45%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
